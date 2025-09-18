@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<link rel="shortcut icon" href="favcom/favicon (1).ico" type="image/x-icon">
+
+    <title>Midias de html5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+<p>tente abrir as imagens em varios dispositivos diferentes ou mude o tamanho da aba do pc </p>
+<picture>
+    <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+    <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-p.png" alt="imagem flexível">
+</picture>
+<picture>  
+    <source media="(max-width: 749px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1049px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagem flexível">
+</picture>
+
+<h1>teste de audio</h1>
+<audio src="midia/rise-304744.mp3" controls  autoplay></audio>
+<br>
+<audio preload="metadata" controls autoplay loop>
+    <source src="midia/rise-304744.mp3" type="audio/mpeg">
+</audio>
+<h1>Midias de videos </h1>
+
+
+
+</body>
+</html>
